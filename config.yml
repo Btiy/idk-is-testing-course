@@ -1,0 +1,16 @@
+title: 'idk is testing '
+description: 'im learnig to use this '
+template:
+  repo: idk-is-testing-template
+  name: idk-is-testing
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
